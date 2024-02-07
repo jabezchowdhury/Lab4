@@ -9,6 +9,6 @@
 
 ## Screenshots
 ### Exercise B
-![Alt text](https://github.com/jabezchowdhury/Lab4/blob/main/ExerciseB.gif)
+![Alt text](url to image)
 ### Exercise C
-![Alt text](https://github.com/jabezchowdhury/Lab4/blob/main/ExerciseC.gif)
+![Alt text](url to image)
