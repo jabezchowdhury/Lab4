@@ -1,11 +1,11 @@
 <!--
-=========================================================
-Name        : index.html
-Assignment  : Lab 4 Exercise B
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
-Description : Responsive Layouts.
-=========================================================
+===========================================
+Name: index.html
+Assignment: Lab 4 Exercise B
+Author (s): Alex Tong, Jabez Chowdhury
+Submission: February 7, 2024
+Description: Responsive Layouts.
+===========================================
 -->
 <!DOCTYPE html>
 <html>
@@ -16,27 +16,7 @@ Description : Responsive Layouts.
 		This tag is essential for responsive design as it tells the browser how to control the page's dimensions and scaling.
 	-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!-- First, link the menu.css file here -->
-
-	<style>	
-		/* Remove borders at the end, they have been add just for detecting positions of items*/	
-		div {
-			border: 1px dashed gray;	
-		}
-		.row{ 
-			border: 1px solid red;			
-		}
-		.large {
-			border: 1px solid blue;	
-		}
-		.medium {
-			border: 1px solid green;	
-		}
-		.small {
-			border: 1px solid yellow;	
-		}		
-	</style>
+	<link rel="stylesheet" type="text/css" href="menu.css">
 
     <style>
 		body { margin: 0; padding: 0;}
@@ -48,38 +28,72 @@ Description : Responsive Layouts.
         .news-item { padding: 10px; }
 		
 		.row { 
-			/*I need some CSS codes.*/		
+			box-sizing:border-box;
+			padding: 10px;
 		}
 
 		.large, .medium, .small {
-			/*I need some CSS codes.*/
+			box-sizing:border-box;
+			padding: 10px;
+			float: left;	
 		}
 		
 		.gap {
-			/*I need some CSS codes.*/
+			margin-bottom: 100px;
 		}
 
 		@media screen and (min-width: 769px) {			
 			.large { 
-				/*I need some CSS codes.*/
+				width: 100%;
 			}
 			.medium { 
-				/*I need some CSS codes.*/
+				width: 70%;
 			}
 			.small { 
-				/*I need some CSS codes.*/
-			 }
+				width: 30%;
+			}
 		}
 
         @media screen and (max-width: 768px) {
-            /*I need some CSS codes.*/
-        }
+			.main {
+				margin-left: 0px;
+			}
+			.menu {
+				width:100%;
+				float: left;
+			}
+            .large { 
+				width: 100%;
+			}
+			.medium { 
+				width: 60%;
+			}
+			.small { 
+				width: 40%;
+			}
+		}
 
         @media screen and (max-width: 480px) {
-			/*I need some CSS codes.*/
+			.main {
+				margin-left: 0px;
+			}
+			.menu {
+				width:100%;
+				float: left;
+			}
+			.large { 
+				width: 100%;
+			}
+			.medium { 
+				width: 100%;
+			}
+			.small { 
+				width: 100%;
+			}
+			.news-item h1{
+				font-size: 18px;
+			}
         }
-
-        
     </style>
 </head>
 <body>
