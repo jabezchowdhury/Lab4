@@ -9,6 +9,6 @@
 
 ## Screenshots
 ### Exercise B
-![Alt text](/Exerciseb.gif)
+![Alt text](/exerciseb.gif)
 ### Exercise C
-![Alt text](/Exercisec.gif)
+![Alt text](/exercisec.gif)
