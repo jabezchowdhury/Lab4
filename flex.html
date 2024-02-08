@@ -2,8 +2,8 @@
 =========================================================
 Name        : flex.html
 Assignment  : Lab 4 Exercise C
-Author(s)   : Jabez Chowdhury, Alex Tong
-Submission  : February 7, 2024
+Author(s)   : Jabez Chowdhury, Alex Tong 
+Submission  : Februrary 7, 2023
 Description : Flex Layouts.
 =========================================================
 -->
@@ -68,50 +68,57 @@ Description : Flex Layouts.
         body { margin: 0; padding: 0; }
         img { max-width: 100%; height: auto; }
         .container { 
-			/*I need some CSS codes.*/
+			display: flex;
+			flex-direction: column;
 		 }
         .header, .footer { background-color: #f2f2f2; text-align: center; padding: 10px; width: 100%;}
 		.body { 
-			/*I need some CSS codes.*/
+			display: flex;
+			flex-direction: row;
 		}
         .main { 
 			padding: 15px; 
-			/*I need some CSS codes.*/
+			flex-grow: 1;
 		}
         
         .news-item { padding: 10px; }
         .row { 
-			/*I need some CSS codes.*/
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
 		}
         
 
         @media screen and (min-width: 769px) {
             .menu { width: 150px; }     
 			.large { 
-				/*I need some CSS codes.*/
+				flex: 2 0 60%
 			}
 			.medium { 
-				/*I need some CSS codes.*/
+				flex: 1 0 30%
 			}
 			.small { 
-				/*I need some CSS codes.*/
+				flex: 1 0 30%
 			 }       
         }
 
         @media screen and (max-width: 768px) {
 			.body { 
-				/*I need some CSS codes.*/
+				flex-direction: column;
 			}
             .menu ul { 
-				/*I need some CSS codes.*/
+				flex-direction: row;
+				
 			 }            
-            /*I need some CSS codes.*/
+            .medium, .small {
+				flex: 1 0 100%
+			}
         }
 
         @media screen and (max-width: 480px) {
             .news-item header h1 { font-size: 18px; }
             .medium, .small { 
-				/*I need some CSS codes.*/
+				flex: 1 0 100%
 			 }
         }
     </style>
